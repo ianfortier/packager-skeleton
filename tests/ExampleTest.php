@@ -1,13 +1,7 @@
 <?php
 
-namespace :uc:vendor\:uc:package\Tests;
+use :uc:vendor\:uc:package\Tests\TestCase;
 
-use PHPUnit\Framework\TestCase;
-
-class ExampleTest extends TestCase
-{
-    public function test_true_is_true(): void
-    {
-        self::assertTrue(true);
-    }
-}
+it('example test', function () {
+    expect(true)->toBeTrue();
+});
